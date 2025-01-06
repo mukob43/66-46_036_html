@@ -1,0 +1,57 @@
+header{
+background-color: bisque;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.menu ul{
+    display: flex;
+    list-style-type: none;
+    gap: 24px;
+}
+.logo-name{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logo-menu{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.btn-primary{
+    background-color: blue;
+    color: #ffffff;
+    padding: 8px 16px;  
+    border-radius: 10px;
+    text-decoration: none;
+    border: none;
+}
+.btn-secondary{
+    background-color: rgb(255, 255, 255);
+    color: #3932ff;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgb(79, 91, 255);
+}
+
+
+
+footer{
+background-color: aquamarine;
+}
+.container{
+background-color: blueviolet;
+}
+
+
+

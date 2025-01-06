@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Image</title>
+    <style>
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .center {
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+      }
+      .b-image-contain {
+        object-fit: contain;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      } 
+      .b-image-fill {
+        object-fit:fill;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      }
+      .b-image-cover {
+        object-fit:cover;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      }
+      .s-image-fill {
+        object-fit:fill;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      }
+      .s-image-contain {
+        object-fit:contain;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      }
+      .s-image-cover {
+        object-fit:cover;
+        width: 300px;
+        height: 100px;
+        border: 1px solid pink;
+      }
+      .gallery{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>My Favorite Picture</h1>
+  <img src="https://easy-peasy.ai/cdn-cgi/image/quality=70,format=auto,width=300/https://fdczvxmwwjwpwbeeqcth.supabase.co/storage/v1/object/public/images/63909821-b016-4464-a1bc-cc2c69e182df/4e2cb132-42c6-4822-8cbc-9c2c39dddaeb.png" alt="A placeholder image" width="300">
+  <p>This is an image from websaite.</p>
+
+    <img src="images/rabbit3.jpg" alt="A placeholder image" width="300">
+  <p>This is an image from my computer.</p>
+
+  <hr>
+
+  <h1>Click the Image : Link for Open new window</h1>
+  <a href="https://www.wikipedia.org" target="_blank">
+    <img src="https://media.istockphoto.com/id/1476655455/vector/click-me-freehand-drawn-speech-bubble-cartoon-sign.jpg?s=612x612&w=is&k=20&c=8HszwPXVaypLkmc70EDuankX7-dGWvTDN3LXRb1zu4A=" alt="A clickable image" width="200">
+    
+  </a>
+
+  <hr>
+
+  <h1>Image Alignment</h1>
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png" width="150" class="left">This image is aligned to the left.</p>
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png" alt="Right aligned image"width="150" class="right">This image is aligned to the right.</p>
+  <p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png" alt="Center aligned image"width="150" class="center">This image is centered.</p>
+
+  <hr>
+
+  <h1>Object-Fit: Image Bigger than Container (300x100)</h1>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+    <br>
+  </div>
+  <div>
+    <img src="images/rabbit3.jpg" alt="Sample Image" class="b-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+    <br>
+  </div>
+
+
+  <hr>
+
+  <h1>Object-Fit: Image Smaller than Container</h1>
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mtwH88T9e20tCqHSZrzqxgIWh16ltwy3tQ&s" alt="Sample Image" class="s-image-fill">
+    <p>fill (ค่าเริ่มต้น): ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา อาจทำให้เนื้อหาถูกยืดหรือบีบ</p>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mtwH88T9e20tCqHSZrzqxgIWh16ltwy3tQ&s" alt="Sample Image" class="s-image-contain">
+    <p>contain: ปรับขนาดเนื้อหาให้พอดีกับกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ อาจมีพื้นที่ว่างถ้าอัตราส่วนไม่ตรงกัน</p>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mtwH88T9e20tCqHSZrzqxgIWh16ltwy3tQ&s" alt="Sample Image" class="s-image-cover">
+    <p>cover: ปรับขนาดเนื้อหาให้เติมเต็มกล่องเนื้อหา โดยรักษาอัตราส่วนภาพ ส่วนที่เกินจะถูกตัดออก</p>
+  </div>
+
+
+  <hr>
+
+
+  <h1>Image Gallery</h1>
+  <div class="gallery">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7mtwH88T9e20tCqHSZrzqxgIWh16ltwy3tQ&s"  alt="Image 1" width="300" height="300">
+    <img src="https://png.pngtree.com/png-vector/20230922/ourmid/pngtree-dinosaur-cartoon-clip-art-png-image_10145421.png"  alt="Image 2" width="300" height="300">
+    <img src="https://media.istockphoto.com/id/1473499598/vector/vector-cute-pink-sea-fish-aquarium-cartoon-fish-for-print-children-illustration-on-white.jpg?s=612x612&w=is&k=20&c=6OlgzZZBsOVqv6wI1-iEmPhFLQxCNIeHVY0boodL_Ag="alt="Image 3" width="300" height="300" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh8NV7BibHy3YsXUe5ca7lSNBVx55nOKuxtw&s"  alt="Image 4"width="300" height="300">
+  </div>
+
+  <hr>
+
+
+  <h1>FlexBox: </h1>
+  <div class="ex-flex">
+    <img src="images/flex.jpg" alt="Image 1">
+    <br>
+  </div>
+
+  <hr>
+  <h1>FlexBox: justify-content</h1>
+  <div class="ex-flex">
+    <img src="images/justify-content.jpg" alt="Image 1">
+    <br>
+  </div>
+  
+  <hr>
+
+
+  <div class="back-to-home">
+    <a href="index.html">Back to Home</a>
+  </div>
+</body>
+</html>
+easy-peasy.ai
